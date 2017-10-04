@@ -11,16 +11,19 @@ package com.mycompany.bissexto;
  */
 public class Bissexto {
     
-    public void bissexto(int numero){
+    public boolean bissexto(int numero){
         
         if((numero%100)!=0 && ((numero%4)==0) && ((numero%400)!=0)){
             System.out.println("Número é Bixesto");
+            return true;
         }
         
         else if ((numero%400)==0){
             System.out.println("Número é Bixesto");
+            return true;
         }
         else System.out.println("Numero não é Bixexto");
+        return false;
     }
     
 }
